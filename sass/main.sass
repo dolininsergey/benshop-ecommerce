@@ -1,0 +1,204 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	height: 100vh
+	background-color: #F0F1F3
+	nav
+		display: flex
+		padding-left: 6%
+		padding-right: 6%
+		align-items: center
+		justify-content: space-between
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 2
+		flex-wrap: wrap
+		.logo
+			color: #000
+			font-size: 25px
+			&:hover
+				text-decoration: none
+		.menu
+			display: flex
+			list-style-type: none
+			flex-basis: 570px
+			justify-content: space-between
+			padding: 0
+			li 
+				a
+					font-size: 16px
+					font-weight: medium
+					color: #99999B
+					&:hover
+						color: #000
+						text-decoration: none
+		.icons-menu
+			display: flex
+			list-style-type: none	
+			padding: 0
+			flex-basis: 110px
+			justify-content: space-between
+			li
+				position: relative
+				a
+					color: #000
+					font-size: 22px
+					text-decoration: none
+					padding: 0
+					.icon-circle
+						width: 20px
+						height: 20px
+						background-color: #FF3B30
+						font-size: 12px
+						position: absolute
+						bottom: -2px
+						right: -10px
+						border-radius: 10em
+						text-align: center
+						padding: 10px
+						display: flex
+						justify-content: center
+						align-items: center
+						color: #fff
+	.header-announce
+		.announce-header
+			font-size: 72px
+			color: #000
+			font-weight: 300
+			white-space: nowrap
+			text-align: center
+		ul
+			display: flex
+			list-style-type: none
+			flex-basis: 500px
+			justify-content: space-between
+			padding: 0
+			flex-wrap: wrap
+			li
+				a
+					font-size: 20px
+					font-weight: medium
+					text-decoration: underline	
+					color: #000
+					.fa
+						font-size: 22px					
+
+.mm-panels, .mm-panels>.mm-panel
+	background-color: #F5F5F5
+	position: relative
+	width: 100%
+	height: 100vh
+
+.hamburger-box
+	width: 0px
+	height: 13px
+
+.hamburger--spin .hamburger-inner	
+	width: 25px
+	height: 3px
+	&::before
+		width: 25px
+		height: 3px
+	&::after
+		width: 25px
+		height: 3px
+
+#my-menu
+	// display: flex
+	// flex-direction: column
+	// justify-content: center
+	// align-items: center
+	// list-style-type: none
+	li
+		a
+			font-size: 20px
+			color: #6F6F6F
+			&:hover
+				text-decoration: none		
+				color: #000
+		.social-menu
+			display: flex
+			list-style-type: none		
+
+.mm-panel.mm-hasnavbar .mm-navbar
+	display: none			
+
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+	display: flex
+	width: 100%
+	//height: 100vh
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin: 0
+
+.mm-listview>li, .mm-listview>li .mm-next, .mm-listview>li .mm-next:before, .mm-listview>li:after
+	border-bottom: none !important
+
+// to solve scroll issue 
+html.mm-opened
+	overflow-y: scroll
+.mm-panels > .mm-panel.mm-hasnavbar
+	right: -18px	
+.mobile-hamburger
+	padding: 0
+
+@import "media" // Всегда в конце
