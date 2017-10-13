@@ -4,19 +4,23 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	// .trending-items, .accessories-category, .shoes-category
+	// 	margin-bottom: 0
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	header nav .icons-menu
 		flex-basis: unset
-
+	.categories .category-row
+		padding: 0	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	header nav .icons-menu
 		flex-basis: unset
+	.categories .category-row
+		padding: 0	
 
 
 /* Extra Small Devices, Phones */
@@ -37,6 +41,9 @@
 		align-items: center				
 	header .header-announce ul li:first-child
 		margin-bottom: 10px	
+	.categories .category-row .category
+		margin-bottom: 30px !important
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
