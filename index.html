@@ -1,235 +1,178 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-
-	<meta charset="utf-8">
-
-	<title>Title</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-
-</head>
-
-<body>
-
-<div id="my-page">
-
-  <div id="my-header">
-  	
-
-	<header class="header">
-
-	<nav>
-		<a href="#my-menu" class="hamburger hamburger--spin hidden-md hidden-lg mobile-hamburger">
-			<span class="hamburger-box"><span class="hamburger-inner"></span></span>
-		</a>
-		<a href="#" class="logo"><strong>BenShop</strong></a>
-		<ul id="my-menu">
-			<ul>
-				<li><a href="#">Demos</a></li>
-				<li><a href="#">Shop</a></li>
-				<li><a href="#">Collection</a></li>
-				<li><a href="#">Journal</a></li>
-				<li><a href="#">Elements</a></li>
-				<li><a href="#">Pages</a></li>
-			</ul>
-
-			
-		</ul>
-
-		<ul class="menu hidden-sm hidden-xs">
-			<li><a href="#">Demos</a></li>
-			<li><a href="#">Shop</a></li>
-			<li><a href="#">Collection</a></li>
-			<li><a href="#">Journal</a></li>
-			<li><a href="#">Elements</a></li>
-			<li><a href="#">Pages</a></li>
-		</ul>
-		<ul class="icons-menu">
-			<li class="hidden-sm hidden-xs"><a href="#"><i class="fa fa-search"></i></a></li>
-			<li><a href="#"><i class="fa fa-shopping-bag"><span class="icon-circle">2</span></i></a></li>
-
-			<li>
-				<a href="#my-menu" class="hamburger hamburger--spin hidden-sm hidden-xs">
-					<span class="hamburger-box"><span class="hamburger-inner"></span></span>
-				</a>
-			</li>
-
-		</ul>
-	</nav>
-
-	<div class="header-announce">
-		<h1 class="announce-header">New Arrivals</h1>
-		<ul>
-			<li><a href="#">Woman Collection</a></li>
-			<li class="hidden-xs hidden-sm"><a href="#"><i class="fa fa-coffee"></i></a></li>
-			<li><a href="#">Man Collection</a></li>
-		</ul>
-	</div>
-	
-
-</header>
-  </div>
-
-  <div id="my-content">
-  	<section class="categories hidden-sm hidden-xs">
-  		<div class="category-row col-lg-4 col-md-4 col-sm-12 col-xs-12">
-  			<div class="category women-category bg-settings" style="background-color: #AEE238"><span>for women</span></div>
-  			<div class="category trending-items bg-settings" style="background-color: #40C0CD"><span>trending items</span></div>
-  		</div>
-
-
-  		<div class="category-row col-lg-4 col-md-4 col-sm-12 col-xs-12">
-  			<div class="category shop-deals-category bg-settings" style="background-color: #E6E400"><span>Shop Deals</span></div>
-  			<div class="category accessories-category bg-settings" style="background-color: #4F5DA6"><span>Accessories</span></div>  			
-  		</div>
-
-
-  		<div class="category-row col-lg-4 col-md-4 col-sm-12 col-xs-12">
-  			<div class="category men-category bg-settings" style="background-color: #FD5301"><span>for men</span></div>
-  			<div class="category shoes-category bg-settings" style="background-color: #0B0F0E"><span>Shoes</span></div>  			
-  		</div>
-  	</section>
-
-
-<section class="featured-products-section">
-
-	<h2 class="featured-header">Featured Products</h2>
-
-	<div class="owl-carousel featured-products-carousel">
-
-		<div class="featured-product">
-			<div class="product-image">
-				<span class="product-label green-bg">sale</span>
-				<div class="product-button">
-					<a href="#">add to cart</a>
-					<a href="#"><i class="fa fa-heart-o"></i></a>
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#000">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#000">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+		<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	</head>
+	<body>
+		<div id="my-page">
+			<div id="my-header">
+				<!-- Header Starts here -->
+				<header class="header">
+					<nav>
+						<!-- Mobile Hamburger Button -->
+						<a href="#my-menu" class="hamburger hamburger--spin hidden-md hidden-lg mobile-hamburger">
+							<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+						</a>
+						<a href="#" class="logo"><strong>BenShop</strong></a>
+						<ul id="my-menu">
+							<ul>
+								<li><a href="#">Demos</a></li>
+								<li><a href="shop.html">Shop</a></li>
+								<li><a href="#">Collection</a></li>
+								<li><a href="#">Journal</a></li>
+								<li><a href="#">Elements</a></li>
+								<li><a href="#">Pages</a></li>
+							</ul>
+							
+						</ul>
+						<ul class="menu hidden-sm hidden-xs">
+							<li><a href="#">Demos</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="#">Collection</a></li>
+							<li><a href="#">Journal</a></li>
+							<li><a href="#">Elements</a></li>
+							<li><a href="#">Pages</a></li>
+						</ul>
+						<ul class="icons-menu">
+							<li class="hidden-sm hidden-xs"><a href="#"><i class="fa fa-search"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-bag"><span class="icon-circle">2</span></i></a></li>
+							<li>
+								<a href="#my-menu" class="hamburger hamburger--spin hidden-sm hidden-xs">
+									<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- The central part of the header -->
+					<div class="header-main-block">
+						<h1 class="announce-header">New Arrivals</h1>
+						<ul>
+							<li><a href="#">Woman Collection</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#"><i class="fa fa-coffee"></i></a></li>
+							<li><a href="#">Man Collection</a></li>
+						</ul>
+					</div>					
+				</header>
+			</div>
+			<!-- Content Area starts here -->
+			<div id="my-content">
+				<!-- Categories -->
+				<section class="categories hidden-sm hidden-xs">
+					<div class="category-row col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="category women-category bg-settings" style="background-color: #AEE238"><span>for women</span></div>
+						<div class="category trending-items bg-settings" style="background-color: #40C0CD"><span>trending items</span></div>
+					</div>
+					<div class="category-row col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="category shop-deals-category bg-settings" style="background-color: #E6E400"><span>Shop Deals</span></div>
+						<div class="category accessories-category bg-settings" style="background-color: #4F5DA6"><span>Accessories</span></div>
+					</div>
+					<div class="category-row col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="category men-category bg-settings" style="background-color: #FD5301"><span>for men</span></div>
+						<div class="category shoes-category bg-settings" style="background-color: #0B0F0E"><span>Shoes</span></div>
+					</div>
+				</section>
+				<!-- Featured Products Section -->
+				<section class="featured-products-section">
+					<h2 class="featured-header">Featured Products</h2>
+					<div class="owl-carousel featured-products-carousel">
+						<div class="featured-product">
+							<div class="product-image">
+								<span class="product-label green-bg">sale</span>
+								<div class="product-button">
+									<a href="#">add to cart</a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+								</div>
+							</div>
+							<h4 class="product-name">Barton Sunglasses</h4>
+							<h5 class="product-price">194.00 USD</h5>
+						</div>
+						<div class="featured-product">
+							<div class="product-image">
+								<div class="product-button">
+									<a href="#">add to cart</a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+								</div>
+							</div>
+							<h4 class="product-name">Square Backpack</h4>
+							<h5 class="product-price">58.00 USD</h5>
+						</div>
+						<div class="featured-product">
+							<div class="product-image">
+								<span class="product-label red-bg">hot</span>
+								<div class="product-button">
+									<a href="#">add to cart</a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+								</div>
+							</div>
+							<h4 class="product-name">Slide Sandal </h4>
+							<h5 class="product-price">98.00 USD</h5>
+						</div>
+						<div class="featured-product">
+							<div class="product-image">
+								<div class="product-button">
+									<a href="#">add to cart</a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+								</div>
+							</div>
+							<h4 class="product-name">Leather Bag</h4>
+							<h5 class="product-price">150.00 USD</h5>
+						</div>
+					</div>
+					<div class="icons-row">
+						<div class="icon col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<img src="img/icon1.png" alt="Icon">
+							<h3>Free Shipping</h3>
+						</div>
+						<div class="icon col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<img src="img/icon2.png" alt="Icon">
+							<h3>Support Customer</h3>
+						</div>
+						<div class="icon col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<img src="img/icon3.png" alt="Icon">
+							<h3>Secure Payments</h3>
+						</div>
+					</div>
+				</section>
+				<!-- Discount Section -->
+				<div class="discount">
+					<h2>Get Discount 30% Off</h2>
+					<span class="discount-description">Subscribe our newsletter and get discount 30% off</span>
+					<form action="">
+						<input type="text" placeholder="Enter your email address">
+						<a href="#" class="button">Subscribe</a>
+					</form>
 				</div>
 			</div>
-			<h4 class="product-name">Barton Sunglasses</h4>
-			<h5 class="product-price">194.00 USD</h5>
+			<!-- Footer Starts Here -->
+			<!-- <div id="my-footer"></div> -->
+			<footer class="footer">
+				<a href="#" class="logo col-lg-3 col-md-3 col-sm-12 col-xs-12"><strong>BenShop</strong></a>
+				<span class="copyright col-lg-3 col-md-3 col-sm-12 col-xs-12">© 2017 Flinto. All rights reserved</span>
+				<ul class="social-icons col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</footer>
 		</div>
-
-		<div class="featured-product">
-			<div class="product-image">
-				<div class="product-button">
-					<a href="#">add to cart</a>
-					<a href="#"><i class="fa fa-heart-o"></i></a>
-				</div>				
-			</div>
-			<h4 class="product-name">Square Backpack</h4>
-			<h5 class="product-price">58.00 USD</h5>
-		</div>
-
-		<div class="featured-product">
-			<div class="product-image">
-				<span class="product-label red-bg">hot</span>
-				<div class="product-button">
-					<a href="#">add to cart</a>
-					<a href="#"><i class="fa fa-heart-o"></i></a>
-				</div>				
-			</div>
-			<h4 class="product-name">Slide Sandal </h4>
-			<h5 class="product-price">98.00 USD</h5>
-		</div>	
-
-		<div class="featured-product">
-			<div class="product-image">
-				<div class="product-button">
-					<a href="#">add to cart</a>
-					<a href="#"><i class="fa fa-heart-o"></i></a>
-				</div>				
-			</div>
-			<h4 class="product-name">Leather Bag</h4>
-			<h5 class="product-price">150.00 USD</h5>
-		</div>			
-
-	</div>
-
-<div class="icons-row">
-	<div class="icon col-lg-4 col-md-4 col-sm-12 col-xs-12">
-		<img src="img/icon1.png" alt="Icon">
-		<h3>Free Shipping</h3>
-	</div>
-	<div class="icon col-lg-4 col-md-4 col-sm-12 col-xs-12">
-		<img src="img/icon2.png" alt="Icon">
-		<h3>Support Customer</h3>
-	</div>
-	<div class="icon col-lg-4 col-md-4 col-sm-12 col-xs-12">
-		<img src="img/icon3.png" alt="Icon">
-		<h3>Secure Payments</h3>
-	</div>		
-</div>
-
-</section>
-
-
-<div class="discount">
-	<h2>Get Discount 30% Off</h2>
-	<span class="discount-description">Subscribe our newsletter and get discount 30% off</span>
-	<form action="">
-		<input type="text" placeholder="Enter your email address">
-		<a href="#" class="button">Subscribe</a>
-	</form>
-</div>
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="my-footer"></div>
-	<footer class="footer">
-		<a href="#" class="logo col-lg-3 col-md-3 col-sm-12 col-xs-12"><strong>BenShop</strong></a>
-		<span class="copyright col-lg-3 col-md-3 col-sm-12 col-xs-12">© 2017 Flinto. All rights reserved</span>
-		<ul class="social-icons col-lg-3 col-md-3 col-sm-12 col-xs-12">
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-		</ul>
-	</footer>   
-</div>
-
-
-
-
-
-
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-
-</body>
+		<link rel="stylesheet" href="css/main.min.css">
+		<script src="js/scripts.min.js"></script>
+	</body>
 </html>

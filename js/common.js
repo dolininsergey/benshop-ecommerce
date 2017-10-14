@@ -1,5 +1,6 @@
 $(function() {
 
+// Mmenu Features
 $('#my-menu').mmenu({
   "navbars": [
     {
@@ -32,19 +33,18 @@ api.bind('open:finish', function() {
 	$('.hamburger').removeClass('is-active');
 	});
 
+// Catrgory Boxes Styles
 $('.category').hover(function() {
 	$(this).css({
-		//'background-color' : '#fff',
 		'border' : 'solid 3px #000',
 	});
 }, function() {
 		$(this).css({
-		//'background-color' : '#F3F3F3',
 		'border' : 'none',
 	});
 });
 
-
+// Carousel with Featured Products
  $(".featured-products-carousel").owlCarousel({
  		loop: true,
  		margin: 20,
@@ -64,18 +64,20 @@ $('.category').hover(function() {
       },
  });
 
-// $(".fa .fa-heart-o").click(function() {
-// 	$(this).css("color", "#FF3B30	");
-// }, function() {
-// 	$(this).css("color", "#000");
-// }); 
-
+// Styles for Each Featured Product
 $(".featured-product").hover(function() {
 	$(this).find(".product-button").css("display", "flex");
 	$(this).find(".product-image").css("border", "solid 1px #000");
 }, function() {
 	$(this).find(".product-button").css("display", "none");
 	$(this).find(".product-image").css("border", "none");
+});
+
+
+// Sale Banner 
+
+$(".close-button").click(function() {
+  $(".alarm-banner").css("display", "none");
 });
 
 });
