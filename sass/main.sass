@@ -78,7 +78,7 @@ header
 		.logo
 			color: #000
 			font-size: 25px
-			&:hover
+			&:hover, &:active, &:focus
 				text-decoration: none
 		.menu
 			display: flex
@@ -91,7 +91,7 @@ header
 					font-size: 16px
 					font-weight: medium
 					color: #99999B
-					&:hover
+					&:hover, &:active, &:focus
 						color: #000
 						text-decoration: none
 		.icons-menu
@@ -104,14 +104,16 @@ header
 				position: relative
 				a
 					color: #000
-					font-size: 22px
+					font-size: 21px
 					text-decoration: none
 					padding: 0
+					&:hover, &:active, &:focus
+						text-decoration: none
 					.icon-circle
-						width: 20px
-						height: 20px
+						width: 18px
+						height: 18px
 						background-color: #FF3B30
-						font-size: 12px
+						font-size: 11px
 						position: absolute
 						bottom: -2px
 						right: -10px
@@ -138,18 +140,16 @@ header
 			flex-wrap: wrap
 			li
 				a
-					font-size: 20px
+					font-size: 19px
 					font-weight: medium
 					text-decoration: underline	
 					color: #000
+					&:hover, &:active, &:focus
+						text-decoration: none
 					.fa
 						font-size: 22px					
 
-.mm-panels, .mm-panels>.mm-panel
-	background-color: #F5F5F5
-	position: relative
-	width: 100%
-	height: 100vh
+// Hamburgers
 
 .hamburger-box
 	width: 0px
@@ -165,30 +165,32 @@ header
 		width: 25px
 		height: 3px
 
+// Mmenu
 #my-menu
-	// display: flex
-	// flex-direction: column
-	// justify-content: center
-	// align-items: center
-	// list-style-type: none
 	li
 		a
 			font-size: 20px
 			color: #6F6F6F
-			&:hover
+			&:hover, &:active, &:focus
 				text-decoration: none		
 				color: #000
 		.social-menu
 			display: flex
 			list-style-type: none		
 
-.mm-panel.mm-hasnavbar .mm-navbar
-	display: none			
+.mm-panels, .mm-panels>.mm-panel
+	background-color: #F5F5F5
+	position: relative
+	width: 100%
+	height: 100vh
+	
+.mm-panels>.mm-panel:not(.mm-hidden)
+	display: flex
+	padding: 0			
 
 .mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	display: flex
 	width: 100%
-	//height: 100vh
 	flex-direction: column
 	justify-content: center
 	align-items: center
@@ -197,13 +199,33 @@ header
 .mm-listview>li, .mm-listview>li .mm-next, .mm-listview>li .mm-next:before, .mm-listview>li:after
 	border-bottom: none !important
 
-// to solve scroll issue 
+// to solve Mmenu scroll issue 
 html.mm-opened
 	overflow-y: scroll
 .mm-panels > .mm-panel.mm-hasnavbar
 	right: -18px	
 .mobile-hamburger
 	padding: 0
+
+// Mmenu navbars
+
+.mm-navbars-bottom
+	border: none
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	padding-bottom: 20px	
+.mm-navbar-content-4
+	display: flex
+	justify-content: space-between
+	width: 30%
+	font-size: 22px	
+.mm-navbar-size-1 
+	.copyright
+		font-size: 14px
+		color: #626262
+
 
 .categories
 	padding-left: 6%
@@ -278,20 +300,24 @@ html.mm-opened
 	.featured-header
 		text-align: center
 		color: #000
-	.slider-categories
-		//width: 100%
-		display: flex
-		list-style-type: none
-		//flex-basis: 500px
-		justify-content: space-between
-		li
-			a
-				color: #A3A3A3
-				font-size: 20px
-				&:hover
-					color: #000
-					text-decoration: none	
+	// .slider-categories
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center
+	// 	ul
+	// 		display: flex
+	// 		list-style-type: none
+	// 		flex-basis: 500px
+	// 		justify-content: space-between
+	// 		li
+	// 			a
+	// 				color: #A3A3A3
+	// 				font-size: 20px
+	// 				&:hover
+	// 					color: #000
+	// 					text-decoration: none	
 	.featured-products-carousel
+		margin-top: 3%
 		.featured-product
 			display: flex
 			flex-direction: column
@@ -331,7 +357,7 @@ html.mm-opened
 						color: #000		
 						font-size: 14px
 						font-weight: 400	
-						&:hover
+						&:hover, &:active, &:focus
 							text-decoration: none	
 							cursor: pointer
 						.fa
@@ -354,7 +380,7 @@ html.mm-opened
 		display: flex
 		justify-content: space-between
 		width: 100%
-		margin-top: 17%
+		margin-top: 15%
 		flex-wrap: wrap
 		.icon
 			display: flex
@@ -365,7 +391,7 @@ html.mm-opened
 			&:last-child 
 				border: none
 			h3
-				font-size: 18px
+				font-size: 17px
 				font-weight: 400
 				color: #A3A3A3
 
@@ -378,13 +404,16 @@ html.mm-opened
 	padding-bottom: 4%	
 	background-color: #F5F5F5
 	margin-top: 5%
+	padding-left: 6%
+	padding-right: 6%
 	h2
 		font-weight: 400
 		font-size: 32px
 		color: #000
 		margin: 0
 	.discount-description
-		font-size: 18px	
+		font-size: 17px	
+		text-align: center
 	form
 		margin-top: 30px
 		width: 100%
@@ -392,16 +421,17 @@ html.mm-opened
 		input
 			height: 50px
 			outline: none
-			font-size: 18px
+			font-size: 16px
 			padding-left: 30px
 			width: 35%
 			margin-right: 2%
+			color: #CBCBCB
 		.button
 			color: #fff
-			font-size: 18px
+			font-size: 17px
 			font-weight: 500
 			line-height: 50px
-			&:hover
+			&:hover, &:active, &:focus
 				text-decoration: none	
 
 .footer
@@ -413,8 +443,8 @@ html.mm-opened
 	align-items: center
 	.logo
 		color: #000
-		font-size: 21px
-		&:hover
+		font-size: 20px
+		&:hover, &:active, &:focus
 			text-decoration: none
 	.social-icons
 		display: flex
@@ -426,10 +456,11 @@ html.mm-opened
 				margin-right: 0
 			a
 				color: #A3A3A3	
-				font-size: 21px
+				font-size: 19px
 	.copyright
 		color: #A3A3A3	
-		font-size: 16px		
+		font-size: 15px		
+		//flex-basis: 500px
 
 
 .button
@@ -445,6 +476,8 @@ html.mm-opened
 	outline: none
 	transition: background-color .1s ease
 	cursor: pointer
+	&:hover, &:active, &:focus
+		text-decoration: none
 
 
 .green-bg

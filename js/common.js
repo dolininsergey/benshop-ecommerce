@@ -1,11 +1,28 @@
 $(function() {
 
 $('#my-menu').mmenu({
-	extensions: [ 'effect-menu-slide', 'pagedim-black' ],
+  "navbars": [
+    {
+       "position": "bottom",
+       "content": [
+          "<a class='fa fa-facebook' href='#/'></a>",
+          "<a class='fa fa-twitter' href='#/'></a>",
+          "<a class='fa fa-pinterest' href='#/'></a>",
+          "<a class='fa fa-youtube' href='#/'></a>",
+       ]
+  	},
+  	{
+  		 "position": "bottom",
+       "content": [
+          "<span class='copyright'>© 2017 Flinto. All rights reserved</span>",
+       ]
+  	}
+ 	],
+	extensions: [ 'effect-menu-slide', 'pagedim-black'],
 	navbar: false,
 	offCanvas: {
 		position: 'right' // menu position
-	}
+	},
 });
 
 var api = $('#my-menu').data('mmenu');
@@ -32,9 +49,19 @@ $('.category').hover(function() {
  		loop: true,
  		margin: 20,
  		items: 4,
- 		dots: true,
- 		dotsEach: true,
- 		dotData: true,
+  	responsiveClass: true,
+  	responsive : {
+          0 : {
+              items: 1,
+              margin: 0
+          },
+          768 : {
+              items: 3
+          },
+          960 : {
+              items: 4
+          },
+      },
  });
 
 // $(".fa .fa-heart-o").click(function() {

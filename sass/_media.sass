@@ -13,7 +13,13 @@
 	header nav .icons-menu
 		flex-basis: unset
 	.categories .category-row
-		padding: 0	
+		padding: 0
+	.footer .logo, .footer .copyright, .footer .social-icons
+		display: flex
+		justify-content: center		
+	.featured-products-section .icons-row .icon
+		border: none
+		margin-bottom: 15px	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -21,6 +27,12 @@
 		flex-basis: unset
 	.categories .category-row
 		padding: 0	
+	.discount form .button
+		display: none	
+	.discount form input, 		
+		width: 100%		
+		
+
 
 
 /* Extra Small Devices, Phones */
@@ -43,6 +55,16 @@
 		margin-bottom: 10px	
 	.categories .category-row .category
 		margin-bottom: 30px !important
+	.discount h2
+		font-size: 25px
+	.discount .discount-description
+		font-size: 15px
+	.discount form input
+		width: 100%
+	.discount form .button
+		display: none			
+	// .footer
+	// 	justify-content: center	
 
 
 /* Custom, iPhone Retina */
@@ -52,6 +74,7 @@
 		order: -1
 	header nav .logo
 		order: -1
+		font-size: 20px
 	.mobile-hamburger
 		order: -1	
 	.header .header-announce .announce-header
@@ -63,6 +86,8 @@
 	header .header-announce ul
 		flex-direction: column
 		align-items: center		
+	.discount form .button
+		display: none		
 
 
 /*==========  Mobile First  ==========*/
