@@ -75,9 +75,11 @@ $(".featured-product").hover(function() {
 
 
 // Sale Banner 
-
 $(".close-button").click(function() {
   $(".alarm-banner").css("display", "none");
 });
+
+// Tabs 
+//$( "#tabs" ).tabs();
 
 });

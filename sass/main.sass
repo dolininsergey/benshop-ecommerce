@@ -117,8 +117,8 @@ header
 			padding: 0
 			li 
 				a
-					font-size: 16px
-					font-weight: medium
+					font-size: 15px
+					font-weight: 400
 					color: #99999B
 					&:hover, &:active, &:focus
 						color: #000
@@ -133,29 +133,29 @@ header
 				position: relative
 				a
 					color: #000
-					font-size: 21px
+					font-size: 19px
 					text-decoration: none
 					padding: 0
 					&:hover, &:active, &:focus
 						text-decoration: none
 					.icon-circle
-						width: 18px
-						height: 18px
+						width: 16px
+						height: 16px
 						background-color: #FF3B30
-						font-size: 11px
+						font-size: 10px
 						position: absolute
 						bottom: -2px
 						right: -10px
 						border-radius: 10em
 						text-align: center
-						padding: 10px
+						padding: 9px
 						display: flex
 						justify-content: center
 						align-items: center
 						color: #fff
 	.header-main-block
 		.announce-header
-			font-size: 72px
+			font-size: 65px
 			color: #000
 			font-weight: 300
 			white-space: nowrap
@@ -169,8 +169,8 @@ header
 			flex-wrap: wrap
 			li
 				a
-					font-size: 19px
-					font-weight: medium
+					font-size: 18px
+					font-weight: 400
 					text-decoration: underline	
 					color: #000
 					&:hover, &:active, &:focus
@@ -185,13 +185,13 @@ header
 	height: 13px
 
 .hamburger--spin .hamburger-inner	
-	width: 25px
+	width: 20px
 	height: 3px
 	&::before
-		width: 25px
+		width: 20px
 		height: 3px
 	&::after
-		width: 25px
+		width: 20px
 		height: 3px
 
 // Mmenu
@@ -281,6 +281,7 @@ html.mm-opened
 				background-color: #fff
 				padding-left: 10%
 				padding-right: 10%
+				font-size: 15px
 		.women-category
 			height: 70%
 			display: flex
@@ -346,7 +347,7 @@ html.mm-opened
 			&:last-child 
 				border: none
 			h3
-				font-size: 17px
+				font-size: 16px
 				font-weight: 400
 				color: #A3A3A3	
 .featured-product
@@ -356,7 +357,7 @@ html.mm-opened
 	//border: solid 1px #000
 	.product-image
 		width: 100%
-		min-height: 300px
+		min-height: 320px
 		background-color: #F3F3F3				
 		position: relative
 		padding: 30px
@@ -368,7 +369,7 @@ html.mm-opened
 			top: 0
 			left: 0
 			padding: 2px 10px
-			font-size: 13px
+			font-size: 12px
 			font-weight: 500
 			text-transform: uppercase
 		.product-button
@@ -381,26 +382,27 @@ html.mm-opened
 			justify-content: space-between
 			padding: 10px 20px
 			display: none
+			align-items: center
 			a
 				color: #000		
-				font-size: 14px
+				font-size: 13px
 				font-weight: 400	
 				&:hover, &:active, &:focus
 					text-decoration: none	
 					cursor: pointer
 				.fa
-					font-size: 22px		
+					font-size: 17px		
 					&:hover
 						color: #FF3B30	
 	.product-name
 		font-weight: 400
 		color: #000
-		font-size: 17px
+		font-size: 15px
 		margin: 0
 		margin-top: 20px
 	.product-price
 		font-weight: 400
-		font-size: 16px
+		font-size: 15px
 		color: #A3A3A3		
 		margin: 0
 		margin-top: 10px
@@ -419,11 +421,11 @@ html.mm-opened
 	padding-right: 6%
 	h2
 		font-weight: 400
-		font-size: 32px
+		font-size: 27px
 		color: #000
 		margin: 0
 	.discount-description
-		font-size: 17px	
+		font-size: 15px	
 		text-align: center
 	form
 		margin-top: 30px
@@ -475,7 +477,7 @@ html.mm-opened
 		//flex-basis: 500px
 
 // SHOP
-#shop-header
+.shop-header
 	height: auto
 	padding-bottom: 6%
 	.alarm-banner
@@ -494,19 +496,19 @@ html.mm-opened
 			font-weight: 500
 			color: #000
 		.event-description
-			font-size: 14px
+			font-size: 13px
 			font-weight: 400
 			color: #726700
 			text-align: center
 		a
 			color: #000
-			font-size: 15px
+			font-size: 14px
 			font-weight: 400
 			text-decoration: underline
 			&:hover, &:active, &:focus
 				text-decoration: underline		
 			.fa
-				font-size: 20px		
+				font-size: 14px		
 	.header-main-block
 		.announce-header
 			font-size: 42px
@@ -526,7 +528,7 @@ html.mm-opened
 						.fa	
 							&:hover, &:active, &:focus
 								color: #9B9B9B				
-	#shop-nav	
+	.shop-nav	
 		position: inherit
 		background-color: #fff
 		padding-left: 16%
@@ -540,7 +542,7 @@ html.mm-opened
 	flex-wrap: wrap
 	align-items: flex-start
 	margin-top: 5%
-	.products-filters
+	.sidebar
 		display: flex
 		flex-direction: column
 		//border: solid 1px red
@@ -560,11 +562,13 @@ html.mm-opened
 			align-items: center
 			span
 				color: #A3A3A3
-				font-size: 16px
+				font-size: 15px
 			.fa
 				font-size: 22px	
-				&:fisrt-child
-					margin-right: 15px
+				&:hover, &:active, &:focus
+					color: #000
+			.fa-list
+				margin-right: 15px
 		.products-row
 			display: flex
 			//justify-content: space-between
@@ -589,7 +593,7 @@ html.mm-opened
 		li
 			margin-bottom: 5px
 			a
-				font-size: 15px
+				font-size: 14px
 				font-weight: 400
 				color: #A3A3A3
 				&:hover, &:active, &:focus
@@ -637,7 +641,7 @@ html.mm-opened
 		li
 			a
 				color: #242424
-				font-size: 18px
+				font-size: 17px
 				&:hover, &:active, &:focus
 					text-decoration: none
 				&:active, &:focus
@@ -647,7 +651,7 @@ html.mm-opened
 		position: absolute
 		z-index: 4
 		color: #242424
-		font-size: 18px
+		font-size: 16px
 		&:hover, &:active, &:focus
 			text-decoration: none
 	.pagination-prev
@@ -689,14 +693,187 @@ html.mm-opened
 				margin-right: 20px
 			.offer-product-name
 				color: #000
-				font-size: 14px
+				font-size: 13px
 				font-weight: 400
 			.offer-product-rating
 				.fa
 					color: #FDD835
 			.offer-product-price
 				color: #737373
-				font-size: 14px
-				font-weight: 400								
+				font-size: 13px
+				font-weight: 400					
+
+// Shop Single Product
+
+.single-product-wrapper
+	padding-left: 16%
+	padding-right: 16%
+	width: 100%
+	.shop-single-product-nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.back-link
+			color: #9B9B9B
+			font-size: 15px
+			font-weight: 400
+			&:hover, &:active, &:focus
+				text-decoration: none
+				color: #000
+			.fa
+				color: #000
+				font-size: 17px
+				padding-right: 15px
+		ul
+			list-style-type: none
+			display: flex
+			flex-basis: 130px
+			justify-content: space-between
+			align-items: center
+			padding: 0
+			li a
+				background-color: #fff
+				font-size: 17px
+				padding: 5px 10px
+				color: #000		
+	.shop-single-product
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: flex-start		
+		.single-product-image
+			background-color: #000
+			//width: 100%
+			min-height: 400px
+		.single-product-description
+			display: flex
+			flex-direction: column	
+			.single-product-category
+				font-size: 15px
+				font-weight: 500
+				text-transform: uppercase
+				color: #5AC8FA
+			.single-product-name
+				font-size: 23px
+				color: #000
+				font-weight: 400
+			.single-product-rating
+				.fa
+					color: #FF9500
+					font-size: 15px
+				.based-on
+					font-size: 16px
+					font-weight: 400
+					color: #000			
+					padding-left: 20px
+			.single-product-price
+				font-size: 20px
+				font-weight: 400
+				color: #6E6E6E		
+			.available-in
+				font-size: 16px
+				font-weight: 400	
+				color: #6E6E6E	
+				span
+					color: #4CD964
+			.single-product-preview
+				color: #000
+				font-size: 15px
+				font-weight: 400		
+			.single-product-buttons
+				display: flex
+				flex-direction: column
+				ul
+					padding: 0
+					display: flex
+					list-style-type: none
+				.spb-1
+					display: flex
+					justify-content: space-between
+					align-items: center
+					ul li
+						span, a
+							background-color: #fff
+							font-size: 20px
+							padding: 3px 10px
+							color: #676767
+							//margin-right: 2px
+							border: solid 1px #EEEEEE
+							height: 100%
+							&:hover, &:active, &:focus
+								text-decoration: none
+						span
+							color: #000									
+					.button
+						background-color: #222
+						text-transform: uppercase
+						display: flex
+						justify-content: center
+						align-items: center	
+						color: #fff
+						padding: 10px 80px
+						&:hover, &:active, &:focus
+							text-decoration: none
+				.spb-2
+					display: flex	
+					justify-content: space-between
+					align-items: center
+					.add-to-wishlist
+						font-size: 17px
+						font-weight: 400
+						color: #000
+						&:hover, &:active, &:focus
+							text-decoration: none						
+						.fa
+							color: #FF3B30
+							font-size: 18px
+							padding-right: 15px
+					ul 
+						display: flex
+						justify-content: space-between
+						align-items: center
+						padding: 0
+						flex-basis: 70px
+						li a
+							font-size: 20px
+							color: #C1C1C1	
+
+//	Tabs
+.single-product-body
+	padding-left: 16%
+	padding-right: 16%
+	.tabs_block
+		.tabs
+			display: flex
+			list-style-type: none
+			padding: 0
+			justify-content: space-between
+			padding-left: 20%
+			padding-right: 20%	
+			border-bottom: solid 2px #BFBFBF
+			li
+				font-size: 17px
+				font-weight: 400
+				color: #A3A3A3
+				cursor: poiner
+			.active
+				color: #007AFF
+				//border-bottom: solid 1px #007AFF 		
+	.description-tab
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		h2
+			font-weight: 400
+			color: #000
+			font-size: 18px
+		.sp-full-description
+			color: #000
+			font-size: 15px
+			font-weight: 400	
+     
+
+
 
 @import "media" // Всегда в конце
